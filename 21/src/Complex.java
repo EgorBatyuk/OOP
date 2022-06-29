@@ -15,7 +15,11 @@ public class Complex {// множественный класс
 public Complex() {
         }
 
-public int cut(String cut_num){
+        public Complex(String num1_1) {
+                this.num1_1 = num1_1;
+        }
+
+        public int cut(String cut_num){
         int index_i_1 = cut_num.indexOf('i');
         StringBuffer stringBuffer = new StringBuffer(cut_num);
         stringBuffer.delete(index_i_1,index_i_1+1);
